@@ -1,13 +1,12 @@
 
-# JavaEE_UserManagentSystem
-# javaEE 学生座位管理系统
+javaEE_UserManagentSystem/javaEE 学生座位管理系统
 
-# Based on javaEE
+ Based on javaEE
 
-# Code in java,html,javascript,jsp
+ Code in java,html,javascript,jsp
 
-# Code by eclipse
+ Code by eclipse
 
-# Server:Tomcat
+ Server:Tomcat
 
-# Database: mysql 8.0.12
+ Database: mysql 8.0.12
