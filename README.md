@@ -1,2 +1,8 @@
-# a user management system JavaEE_Project
-# JavaEE_UserManage
+
+# JavaEE_UserManagentSystem
+
+Based on javaEE
+Code in java,html,javascript,jsp
+Code by eclipse
+Server:Tomcat
+Database: mysql 8.0.12
