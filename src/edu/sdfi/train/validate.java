@@ -8,8 +8,8 @@ public class validate {
 	String Success;
 	
 	public String LoadInfo(String user,String password,String truename,String sex,String age, String driver,String url) {
-		String usersql= "root";
-		String passwordsql = "LSQhsq5211314mxx";
+		String usersql= "yourmysqlaccount";
+		String passwordsql = "yourmysqlpassword";
 		try{
 			Class.forName(driver);
 			Connection conn = DriverManager.getConnection(url,usersql,passwordsql);
@@ -35,8 +35,8 @@ public class validate {
 	public String ConfirmPass(String user,String password) {
 		String driver = "com.mysql.jdbc.Driver";
 		String url = "jdbc:mysql://localhost:3306/javaeeweb";
-		String usersql= "root";
-		String passwordsql = "LSQhsq5211314mxx";
+		String usersql= "yourmysqlaccount";
+		String passwordsql = "yourmysqlpassword";
 		String showflag = null;
 		try{
 			Class.forName(driver);
