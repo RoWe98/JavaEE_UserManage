@@ -1,4 +1,3 @@
-<%@page import="edu.sdfi.train.validate"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import = "java.sql.*"%>
@@ -40,17 +39,29 @@
 	</tr>
 </table>
 <% 
-		String driver = "com.mysql.jdbc.Driver";
-		String url = "jdbc:mysql://localhost:3306/javaeeweb";
-		String loadFlag;
-		validate load = new validate();
-		loadFlag = load.LoadInfo(user,password,truename,sex,age,driver,url);
-		if(loadFlag == "true"){
-			out.println("数据已经录入数据库");
-		}
-		else{
-			out.println("数据已经录入失败");
-		}
+	String driver = "com.mysql.jdbc.Driver";
+	String url = "jdbc:mysql://localhost:3306/javaeeweb";
+	String usersql= "root";
+	String passwordsql = "LSQhsq5211314mxx";
+	try{
+		Class.forName(driver);
+		Connection conn = DriverManager.getConnection(url,usersql,passwordsql);
+		 if(conn != null){  
+             out.print("数据库连接成功！");
+             out.print("<br />");
+		 	 Statement stmt = conn.createStatement();
+		 	 String sql = "INSERT INTO submit(username, password, realname, sex, age) VALUES ('"+user+"', '"+password+"', '"+truename+"', '"+sex+"', '"+age+"')";
+		 	 stmt.executeUpdate(sql);
+        
+		 }
+	}catch(ClassNotFoundException e){
+		System.out.println("Can not find the driver!");
+		e.printStackTrace();
+	}catch(SQLException e){
+		e.printStackTrace();
+	}catch(Exception e){
+		e.printStackTrace();
+	}
 %>
 </body>
 </html>

@@ -27,8 +27,6 @@
 			</tr>
 		<%} %>			
 </table>
-<a href="hello.jsp">
-<% session.setAttribute("login","true");%>
-返回管理系统</a>
+<a href="hello.jsp">返回</a>
 </body>
 </html>

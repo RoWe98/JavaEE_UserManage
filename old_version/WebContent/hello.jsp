@@ -1,4 +1,3 @@
-
 <%@page import="edu.sdfi.train.GetCurrentTime"%>
 <%@page import="java.util.Date"%>
 <%@page import="org.apache.naming.java.javaURLContextFactory"%>
@@ -11,16 +10,6 @@
 <title>登陆</title>
 </head>
 <body>
-<%
-	//判断是否登录
-	
-	String logined = (String)session.getAttribute("login");
-	if(!"true".equals(logined)){
-		response.sendRedirect("login.jsp");
-	}
-	
-	
-%>
 <script type="text/javascript">
 	var date = new Date();
 	document.write(date);
@@ -36,7 +25,7 @@
 %>
 <br>
 <% request.setCharacterEncoding("utf-8");%>
-学生座位管理系统<br>
+This is my JSP page.<br>
 <form action = "process.jsp">
 	学号:<input type = "text" name = "sno"/><br>
 	姓名:<input type = "text" name = "sname"/><br>
@@ -44,8 +33,6 @@
 	列号:<input type = "text" name = "col"/><br>
 	<input type = "submit" value = "提交"/><br>
 </form>
-<a href="login.jsp">退出登录 
-<%session.removeAttribute("login");%>
-</a>
+<a href="login.jsp">退出</a>
 </body>
 </html>

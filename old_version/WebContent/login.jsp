@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>登录系统</title>
+<title>登录</title>
 </head>
 <body> 
 	<form action = "validate.jsp" method="post">
@@ -27,18 +27,5 @@
 			</tr>
 		</table>
 	</form>
-<% 
-/*
-	String pageName = request.getParameter("pageName");
-	Integer count = (Integer)application.getAttribute(pageName);
-	if(count != null){
-		count = new Integer(0);
-	}
-	count =  new Integer(count.intValue()+1);
-	application.setAttribute(pageName, count);
-	out.println(count);
-*/
-	
-%>
 </body>
 </html>

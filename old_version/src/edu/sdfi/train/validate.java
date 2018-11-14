@@ -4,35 +4,7 @@ import java.sql.*;
 
 
 public class validate {
-	
-	String Success;
-	
-	public String LoadInfo(String user,String password,String truename,String sex,String age, String driver,String url) {
-		String usersql= "root";
-		String passwordsql = "LSQhsq5211314mxx";
-		try{
-			Class.forName(driver);
-			Connection conn = DriverManager.getConnection(url,usersql,passwordsql);
-			 if(conn != null){  
-				 Success = "true";
-			 	 Statement stmt = conn.createStatement();
-			 	 String sql = "INSERT INTO submit(username, password, realname, sex, age) VALUES ('"+user+"', '"+password+"', '"+truename+"', '"+sex+"', '"+age+"')";
-			 	 stmt.executeUpdate(sql);
-	        
-			 }
-		}catch(ClassNotFoundException e){
-			System.out.println("Can not find the driver!");
-			e.printStackTrace();
-		}catch(SQLException e){
-			e.printStackTrace();
-		}catch(Exception e){
-			e.printStackTrace();
-		}
-		return Success;
-	}
-	
-	
-	public String ConfirmPass(String user,String password) {
+	public String Confirm(String user,String password) {
 		String driver = "com.mysql.jdbc.Driver";
 		String url = "jdbc:mysql://localhost:3306/javaeeweb";
 		String usersql= "root";
