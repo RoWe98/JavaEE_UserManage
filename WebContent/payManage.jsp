@@ -34,9 +34,7 @@
 <%
 	edu.sdfi.train.GetCurrentTime time = new GetCurrentTime();
 	String current_Date = time.getTime();
-	String hello = time.Judge();
-	//out.println(hello);
-	//out.println("当前标准日期时间为:"+current_Date);	
+	String hello = time.Judge();	
 %>
 
 <% request.setCharacterEncoding("utf-8");%><br>
