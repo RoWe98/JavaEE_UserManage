@@ -5,6 +5,20 @@
 <head>
 <meta charset="UTF-8">
 <title>处理结果</title>
+<<<<<<< HEAD
+<style>
+	
+	
+	table{
+		width:300px;
+		height:300px;
+		border:1px solid red;
+		margin:auto;
+		margin-top:100px
+	}
+</style>
+=======
+>>>>>>> b6947c858e2047a22eb4873eeab849a66847fb59
 </head>
 <body>
 <%!String[][] seats = new String[11][13];%>
@@ -25,10 +39,20 @@
 				<td><%=seats[i][j]%></td>
 			<%} %>
 			</tr>
+<<<<<<< HEAD
+		<%} %>		
+</table>
+<p style="text-align: center;"><a href="hello.jsp">
+				<% session.setAttribute("login","true");%>
+				返回管理系统</a>
+</p>
+
+=======
 		<%} %>			
 </table>
 <a href="hello.jsp">
 <% session.setAttribute("login","true");%>
 返回管理系统</a>
+>>>>>>> b6947c858e2047a22eb4873eeab849a66847fb59
 </body>
 </html>

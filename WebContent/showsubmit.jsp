@@ -7,6 +7,20 @@
 <head>
 <meta charset="UTF-8">
 <title>注册信息</title>
+<<<<<<< HEAD
+<style>
+	
+	
+	table{
+		width:300px;
+		height:300px;
+		border:1px solid white;
+		margin:auto;
+		margin-top:50px
+	}
+</style>
+=======
+>>>>>>> b6947c858e2047a22eb4873eeab849a66847fb59
 </head>
 <body>
 <% 
@@ -38,8 +52,14 @@
 	<tr>
 		<td><a href = "login.jsp">返回登录</a></td>
 	</tr>
+<<<<<<< HEAD
+	<tr>
+		<td>
+		<% 
+=======
 </table>
 <% 
+>>>>>>> b6947c858e2047a22eb4873eeab849a66847fb59
 		String driver = "com.mysql.jdbc.Driver";
 		String url = "jdbc:mysql://localhost:3306/javaeeweb";
 		String loadFlag;
@@ -51,6 +71,13 @@
 		else{
 			out.println("数据已经录入失败");
 		}
+<<<<<<< HEAD
+		%>
+		</td>
+	</tr>
+</table>
+=======
 %>
+>>>>>>> b6947c858e2047a22eb4873eeab849a66847fb59
 </body>
 </html>

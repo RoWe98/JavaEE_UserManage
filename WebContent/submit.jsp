@@ -6,11 +6,29 @@
 <head>
 <meta charset="UTF-8">
 <title>submit</title>
+<<<<<<< HEAD
+<style>
+	
+	
+	table{
+		width:300px;
+		height:300px;
+		border:1px solid white;
+		margin:auto;
+		margin-top:50px
+	}
+</style>
+</head>
+<body>
+<p style="text-align: center;">输入用户名和密码完成注册</p>
+<form action = "showsubmit.jsp" method="post">
+=======
 </head>
 <body>
 <form action = "showsubmit.jsp" method="post">
 	请输入用户名和密码完成注册！<br>
 	*为必填，且密码不能小于6位
+>>>>>>> b6947c858e2047a22eb4873eeab849a66847fb59
 	<table>
 	    <tr>
 	        <td><font color="red">*</font>用户名：</td>
