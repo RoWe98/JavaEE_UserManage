@@ -54,18 +54,6 @@
 			</tr>
 		</table>
 	</form>
-<% 
-/*
-	String pageName = request.getParameter("pageName");
-	Integer count = (Integer)application.getAttribute(pageName);
-	if(count != null){
-		count = new Integer(0);
-	}
-	count =  new Integer(count.intValue()+1);
-	application.setAttribute(pageName, count);
-	out.println(count);
-*/
-	
-%>
+
 </body>
 </html>
